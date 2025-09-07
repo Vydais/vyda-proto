@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VYDA PROTOFIELD — Estado Tecnológico Vivo</title>
+  <meta name="description" content="VYDA PROTOFIELD — 1st Independent HUB quântico planetário: Estado Tecnológico Vivo em operação." />
+  <!-- Tailwind CDN (sem build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#e5e7eb',
+            ink2: '#a1a1aa'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* micro toques visuais */
+    .grain:before{
+      content:"";position:fixed;inset:0;pointer-events:none;opacity:.08;
+      background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity=".25"/></svg>');
+      mix-blend-mode:soft-light
+    }
+    .spark{ animation:s 6s linear infinite }
+    @keyframes s{ 0%{transform:translateY(0)} 100%{transform:translateY(-40px)} }
+    .truncate

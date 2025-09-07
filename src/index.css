@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* basezinha visual */
+:root { --ink: 245 245 244; --ink2: 161 161 170; --ring: 63 63 70; }
+html,body,#root { height:100% }
+body { @apply bg-black text-zinc-100 antialiased; }
+h1,h2,h3 { @apply font-extrabold tracking-tight; }
+
+/* utilitários do Documento */
+.badge{display:inline-block;padding:.25rem .5rem;border-radius:.5rem;
+  border:1px solid rgba(255,255,255,.14);color:#a1a1aa;font-size:.75rem}
+.border-line{border-color:rgba(255,255,255,.14)}
+.text-muted{color:#a1a1aa}
